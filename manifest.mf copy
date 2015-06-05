@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: com.system.main.launcher
+Class-Path: ./import/ sphinx4-core-1.0-20150223.210646-7.jar sphinx4-data-1.0-20150223.210601-7.jar sphinx4-samples-1.0-20150223.210658-7.jar freetts.jar en_us.jar cmutimelex.jar cmu_time_awb.jar cmulex.jar cmu_us_kal.jar cmudict04.jar freetts-jsapi10.jar jsapi.jar mbrola.jar lwjgl.jar
+SplashScreen-Image: splash.png
