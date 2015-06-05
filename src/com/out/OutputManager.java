@@ -108,5 +108,23 @@ public class OutputManager {
 	public void repaint(){
 		display.repaint();
 	}
+	
+	/**
+	 * Invokes the enrollment process.
+	 */
+	public void invokeEnrollment(){
+		
+		EnrollmentDialog name = new EnrollmentDialog(
+				users.getExistingUserNames());
+		
+		// if registration completed, retrieve user details.
+		if(name.getRegistrationStatus()){
+			String[] newUser = name.getUserDetails();
+			users.addUser(newUser[0], 
+					newUser[1], 
+					newUser[2]);
+		}
+		
+	}
 
 }

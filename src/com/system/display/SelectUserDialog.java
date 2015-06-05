@@ -27,8 +27,12 @@ public class SelectUserDialog{
 			return;
 		}
 		
-		String[] existingUsersArray = null;
+		String[] existingUsersArray = new String[existingUserNames.size()];
+		
 		// convert arraylist to array
+		for(int i=0; i < existingUserNames.size(); i++){
+			existingUsersArray[i] = existingUserNames.get(i);
+		}
 		existingUserNames.toArray(existingUsersArray);
 		
 		while(name == null){

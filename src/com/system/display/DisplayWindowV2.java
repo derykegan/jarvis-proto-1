@@ -74,6 +74,10 @@ public class DisplayWindowV2 extends JFrame implements ActionListener{
 		JMenuBar menu = new JMenuBar();
 		JMenu menu1 = new JMenu("File");
 		
+		JMenuItem newUserButton = new JMenuItem("User Enrollment");
+		newUserButton.addActionListener(this);
+		menu1.add(newUserButton);
+		
 		JMenuItem logButton = new JMenuItem("Log");
 		logButton.addActionListener(this);
 		menu1.add(logButton);
@@ -184,6 +188,9 @@ public class DisplayWindowV2 extends JFrame implements ActionListener{
 		}
 		else if(e.getActionCommand()=="Log"){
 			addToOutputLog(parent.getSpeechLog());
+		}
+		else if(e.getActionCommand()=="User Enrollment"){
+			parent.invokeEnrollment();
 		}
 	}
 	
